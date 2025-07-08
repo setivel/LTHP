@@ -27,6 +27,13 @@
 		@media (max-width: 640px) {
 			#banner { height: 100dvh !important; min-height: 100dvh !important; }
 			#page2 { min-height: 100dvh; }
+
+			#banner .more {
+				position: absolute;
+				transform: translate(0%, -1rem);
+				bottom: calc(env(safe-area-inset-bottom, 0px) + 1rem);
+				z-index: 1000;
+			}
 		}
 	}
 </style>
