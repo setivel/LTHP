@@ -5,6 +5,31 @@
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 --><html><head><title>LiTRAIL</title><meta charset="utf-8"><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="assets/css/main.css"></head><body>
 
+<style>
+	@media (max-width: 640px) {
+		#banner {
+			min-height: 100vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		#page2 {
+			min-height: 100vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+	}
+
+	@supports (height: 100dvh) {
+		@media (max-width: 640px) {
+			#banner { min-height: 100dvh; }
+			#page2 { min-height: 100dvh; }
+		}
+	}
+</style>
+
 			<!-- Page1 -->
 			<nav id="menu">
 				<ul class="links"><li><a href="index.html">Home</a></li>
@@ -15,23 +40,6 @@
 					</header></div>
 				<a href="#page2" class="more">Next</a>
 			</section>
-
-			<style>
-				@media (max-width: 640px) {
-					#page2 {
-						min-height: 100vh;
-						display: flex;
-						flex-direction: column;
-						justify-content: center;
-					}
-				}
-
-				@supports (height: 100dvh) {
-					@media (max-width: 640px) {
-						#page2 { min-height: 100dvh; }
-					}
-				}
-			</style>
 
 			<!-- Page2 -->
 			<section id="page2" class="wrapper post bg-img" data-bg="page2.png"><div class="inner">
