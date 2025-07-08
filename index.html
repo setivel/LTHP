@@ -1,34 +1,65 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>LiTRAIL</title>
-    <!-- 모바일 뷰포트 설정 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE HTML>
+<!--
+	Road Trip by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+--><html><head><title>LiTRAIL</title><meta charset="utf-8"><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="assets/css/main.css"></head><body>
 
-    <style>
-        /* html, body에 100% 높이와 overflow:hidden 적용 */
-        html, body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-        }
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #22272a;
-        }
-        img {
-            max-width: 100%;
-            max-height: 100%;
-            /* 화면에 꽉 차되 넘치지 않도록 */
-            object-fit: contain;
-        }
-    </style>
-</head>
-<body>
-    <img src="CI_A_Color.png" alt="Light Trail">
-</body>
-</html>
+			<!-- Page1 -->
+			<nav id="menu">
+				<ul class="links"><li><a href="index.html">Home</a></li>
+				</ul>
+			</nav>
+			<section id="banner" class="bg-img" data-bg="page1.png"><div class="inner">
+					<header><h1></h1>
+					</header></div>
+				<a href="#page2" class="more">Next</a>
+			</section>
+
+			<style>
+				@media (max-width: 640px) {
+					#page2 {
+						min-height: 100vh;
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+					}
+				}
+
+				@supports (height: 100dvh) {
+					@media (max-width: 640px) {
+						#page2 { min-height: 100dvh; }
+					}
+				}
+			</style>
+
+			<!-- Page2 -->
+			<section id="page2" class="wrapper post bg-img" data-bg="page2.png"><div class="inner">
+					<article class="box"><header><h2>Project GOG</h2>
+						</header><div class="content">
+							<p>Coming Soon</p>
+						</div>
+						<!--
+						<footer><a href="gog.html" class="button alt">More</a></footer>
+						-->
+						</article></div>
+				<a href="#footer" class="more">Next</a>
+			</section>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+
+					<h2>Contact</h2>
+
+					<form action="#" method="post">
+
+					<ul class="icons">
+						<li><a href="mailto:hr@li-trial.com" class="icon round fa-envelope"><span class="label">Twitter</span></a></li>
+					</ul>
+				</div>
+			</footer><div class="copyright">
+				© 2024 LiTRAIL. All Rights Reserved.
+		</div>
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script><script src="assets/js/jquery.scrolly.min.js"></script><script src="assets/js/jquery.scrollex.min.js"></script><script src="assets/js/skel.min.js"></script><script src="assets/js/util.js"></script><script src="assets/js/main.js"></script></body></html>
