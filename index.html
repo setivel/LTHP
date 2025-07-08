@@ -8,7 +8,7 @@
 <style>
 	@media (max-width: 640px) {
 		#banner {
-			min-height: 50vh !important;
+			min-height: 100vh !important;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -20,11 +20,19 @@
 			flex-direction: column;
 			justify-content: center;
 		}
+
+		.more {
+			position: absolute;
+			transform: translate(0%, -1.5rem); /* Y축으로 1.5rem 위로 이동 */
+			bottom: calc(env(safe-area-inset-bottom, 0px) + 1.5rem);
+			/* ↳ iOS 하단 홈바 영역을 고려한 safe-area, 그 위로 1.5rem */
+			z-index: 1000;                  /* 다른 요소 위에 보장 */
+		}
 	}
 
 	@supports (height: 100dvh) {
 		@media (max-width: 640px) {
-			#banner { min-height: 50dvh !important; }
+			#banner { min-height: 100dvh !important; }
 			#page2 { min-height: 100dvh; }
 		}
 	}
