@@ -8,6 +8,7 @@
 <style>
 	@media (max-width: 640px) {
 		#banner {
+			height: 100vh !important;
 			min-height: 100vh !important;
 			display: flex;
 			flex-direction: column;
@@ -24,7 +25,7 @@
 
 	@supports (height: 100dvh) {
 		@media (max-width: 640px) {
-			#banner { min-height: 100dvh !important; }
+			#banner { height: 100dvh !important; min-height: 100dvh !important; }
 			#page2 { min-height: 100dvh; }
 		}
 	}
