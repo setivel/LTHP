@@ -4438,6 +4438,9 @@
 /* 2) 100vh → 100dvh 로 교체 (지원 브라우저 한정) */
 @supports (height: 100dvh){
 	@media (max-width:736px){
+		#banner{            /* 섹션이 정확히 한 화면만 차지 */
+			min-height:100dvh;
+		}
 		#page2{            /* 섹션이 정확히 한 화면만 차지 */
 			min-height:100dvh;
 		}
