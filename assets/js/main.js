@@ -10,8 +10,8 @@
 		xlarge:	'(max-width: 1680px)',
 		large:	'(max-width: 1280px)',
 		medium:	'(max-width: 980px)',
-		small:	'(max-width: 736px)',
-		xsmall:	'(max-width: 480px)'
+		//small:	'(max-width: 736px)',
+		//xsmall:	'(max-width: 480px)'
 	});
 
 	$(function() {
@@ -20,7 +20,6 @@
 			$body = $('body'),
 			$header = $('#header'),
 			$banner = $('#banner');
-
 		var $height = $('#header').height();
 
 		// Disable animations/transitions until the page has loaded.
@@ -44,7 +43,7 @@
 			});
 
 		// Banner
-
+/*
 			if ($banner.length > 0) {
 
 				// IE: Height fix.
@@ -66,7 +65,7 @@
 						.addClass('scrolly');
 
 			}
-
+*/
 
 		// Get BG Image
 

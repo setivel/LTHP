@@ -20,14 +20,6 @@
 			flex-direction: column;
 			justify-content: center;
 		}
-
-		.more {
-			position: absolute;
-			transform: translate(0%, -3rem); /* Y축으로 3rem 위로 이동 */
-			bottom: calc(env(safe-area-inset-bottom, 0px) + 3rem);
-			/* ↳ iOS 하단 홈바 영역을 고려한 safe-area, 그 위로 3rem */
-			z-index: 1000;                  /* 다른 요소 위에 보장 */
-		}
 	}
 
 	@supports (height: 100dvh) {

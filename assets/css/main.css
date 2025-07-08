@@ -3694,7 +3694,6 @@
 			background-color: rgba(255, 255, 255, 0.15);
 			border: 0;
 			border-radius: 1em 1em 0 0;
-			bottom: -3em;
 			color: rgba(255, 255, 255, 0.75);
 			display: block;
 			height: 3em;
@@ -3735,7 +3734,6 @@
 				font-size: 2em;
 				position: absolute;
 				right: .425em;
-				bottom: -.075em;
 			}
 
 		#banner:before {
@@ -4033,7 +4031,6 @@
 			background-color: rgba(255, 255, 255, 0.15);
 			border: 0;
 			border-radius: 1em 1em 0 0;
-			bottom: -3em;
 			color: rgba(255, 255, 255, 0.75);
 			display: block;
 			height: 3em;
@@ -4085,7 +4082,6 @@
 				font-size: 2em;
 				position: absolute;
 				right: .425em;
-				bottom: -.075em;
 			}
 
 		@media screen and (max-width: 980px) {
