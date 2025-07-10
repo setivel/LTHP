@@ -4175,25 +4175,25 @@
 
 	#footer {
 		background-color: #F5C520;
-		color: #fdd1d1;
+		color: #333333;
 		padding: 6em 0 4em 0;
 		background: #F5C520;
 	}
 
 		#footer input, #footer select, #footer textarea {
-			color: #ffffff;
+			color: #333333;
 		}
 
 		#footer a {
-			color: #ffffff;
+			color: #333333;
 		}
 
 		#footer strong, #footer b {
-			color: #ffffff;
+			color: #333333;
 		}
 
 		#footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
-			color: #ffffff;
+			color: #333333;
 		}
 
 		#footer blockquote {
@@ -4418,7 +4418,7 @@
 			height: 4em;
 			width: 4em;
 			line-height: 4em;
-			color: #FFF;
+			color: #333333;
 		}
 
 			#footer .icon.round:hover {
