@@ -4524,10 +4524,12 @@
 		z-index: 1000;
 		opacity: 0;
 		transition: opacity 0.3s ease;
+		pointer-events: none;
 	}
 
 	.mobile-menu-overlay.active {
 		opacity: 1;
+		pointer-events: auto;
 	}
 
 	.mobile-menu-content {
@@ -4553,6 +4555,53 @@
 	.mobile-menu-link:hover {
 		color: rgba(255, 255, 255, 1);
 		transform: scale(1.1);
+	}
+
+	/* 모바일 로고 크기 조정 */
+	@media screen and (max-width: 768px) {
+		#header .logo svg {
+			width: 112.5px;
+			height: 11.25px;
+			transform: scale(0.75);
+			transform-origin: left center;
+		}
+
+		/* 모바일 more 버튼 위치 조정 (주소창 회피) */
+		@-moz-keyframes more {
+			0% {
+				bottom: -3em;
+			}
+			100% {
+				bottom: 5em;
+			}
+		}
+
+		@-webkit-keyframes more {
+			0% {
+				bottom: -3em;
+			}
+			100% {
+				bottom: 5em;
+			}
+		}
+
+		@-ms-keyframes more {
+			0% {
+				bottom: -3em;
+			}
+			100% {
+				bottom: 5em;
+			}
+		}
+
+		@keyframes more {
+			0% {
+				bottom: -3em;
+			}
+			100% {
+				bottom: 5em;
+			}
+		}
 	}
 
 	/* 풀스크린 섹션 */
@@ -5372,7 +5421,7 @@
 	gap: 20px;
 	justify-content: center;
 	align-items: center;
-	z-index: 10;
+	z-index: 10002;
 	animation: fadeInUp 1s ease-out 1.8s both;
 }
 
@@ -5422,8 +5471,14 @@
 
 /* 반응형 스타일 */
 @media screen and (max-width: 768px) {
+	/* 플레이 버튼 20% 위로 */
+	.play-button {
+		top: 30%;
+	}
+
+	/* 소셜/플랫폼 버튼 20% 위로 */
 	.social-platform-container {
-		bottom: 70px;
+		bottom: 203px;
 		gap: 15px;
 	}
 
