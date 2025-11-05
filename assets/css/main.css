@@ -3737,6 +3737,15 @@
 				bottom: -.075em;
 			}
 
+			#banner .more.fading {
+				-moz-transition: opacity 0.5s ease;
+				-webkit-transition: opacity 0.5s ease;
+				-ms-transition: opacity 0.5s ease;
+				transition: opacity 0.5s ease;
+				opacity: 0;
+				pointer-events: none;
+			}
+
 		#banner:before {
 			-moz-transition: opacity 1s ease;
 			-webkit-transition: opacity 1s ease;
@@ -4066,6 +4075,15 @@
 				-webkit-animation: more 0.75s ease-out 0s forwards;
 				-ms-animation: more 0.75s ease-out 0s forwards;
 				animation: more 0.75s ease-out 0s forwards;
+			}
+
+			.post .more.fading {
+				-moz-transition: opacity 0.5s ease;
+				-webkit-transition: opacity 0.5s ease;
+				-ms-transition: opacity 0.5s ease;
+				transition: opacity 0.5s ease;
+				opacity: 0;
+				pointer-events: none;
 			}
 
 			.post .more:hover {

@@ -258,6 +258,41 @@
 		});
 	</script>
 
+	<!-- More 버튼 fade out 효과 (다음 페이지가 5% 이상 보이면 서서히 사라짐) -->
+	<script>
+		(function() {
+			// 각 섹션과 more 버튼 매핑
+			const sections = [
+				{ section: document.querySelector('#banner'), nextSection: document.querySelector('#page2'), moreButton: document.querySelector('#banner .more') },
+				{ section: document.querySelector('#page2'), nextSection: document.querySelector('#page3'), moreButton: document.querySelector('#page2 .more') },
+				{ section: document.querySelector('#page3'), nextSection: document.querySelector('#contact'), moreButton: document.querySelector('#page3 .more') }
+			];
+
+			// IntersectionObserver 설정 (다음 섹션이 5% 이상 보이는지 감지)
+			const observerOptions = {
+				threshold: 0.05 // 5% 이상 보일 때 감지
+			};
+
+			sections.forEach(function(item) {
+				if (item.nextSection && item.moreButton) {
+					const observer = new IntersectionObserver(function(entries) {
+						entries.forEach(function(entry) {
+							// 다음 섹션이 5% 이상 보이면 현재 섹션의 more 버튼을 서서히 숨김
+							if (entry.isIntersecting) {
+								item.moreButton.classList.add('fading');
+							} else {
+								item.moreButton.classList.remove('fading');
+							}
+						});
+					}, observerOptions);
+
+					// 다음 섹션 관찰 시작
+					observer.observe(item.nextSection);
+				}
+			});
+		})();
+	</script>
+
 	<!-- 모바일 메뉴 토글 스크립트 -->
 	<script>
 		$(function() {
