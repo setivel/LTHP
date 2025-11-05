@@ -3347,7 +3347,7 @@
 		#header .logo {
 			display: inline-block;
 			height: inherit;
-			left: 1.5em;
+			left: 2.5em;
 			line-height: inherit;
 			margin: 0;
 			padding: 0;
@@ -4622,6 +4622,10 @@
 
 	/* 모바일 로고 크기 조정 */
 	@media screen and (max-width: 768px) {
+		#header .logo {
+			left: 1.7em;
+		}
+
 		#header .logo svg {
 			width: 112.5px;
 			height: 11.25px;
