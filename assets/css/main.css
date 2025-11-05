@@ -5142,7 +5142,7 @@
 /* YouTube 플레이 버튼 */
 .play-button {
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 80px;
@@ -5246,17 +5246,12 @@
 	.play-button {
 		width: 60px;
 		height: 60px;
+		top: 40% !important;
 	}
 
 	.play-button i {
 		font-size: 1.5rem;
 		margin-left: 3px;
-	}
-
-	/* 전략 디펜스 게임 */
-	.game-genre {
-		font-size: 1.1rem;
-		bottom: 280px;
 	}
 
 	/* 모바일에서 배경 이미지 변경 */
@@ -5441,7 +5436,7 @@
 	justify-content: center;
 	align-items: center;
 	z-index: 10002;
-	animation: fadeInUp 1s ease-out 1.8s both;
+	animation: fadeInUp 1s ease-out 0.2s both;
 }
 
 .x-link {
