@@ -4623,7 +4623,7 @@
 	/* 모바일 로고 크기 조정 */
 	@media screen and (max-width: 768px) {
 		#header .logo {
-			left: 1.7em;
+			left: 1.5em;
 		}
 
 		#header .logo svg {
