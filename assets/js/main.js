@@ -20,6 +20,7 @@
 			$body = $('body'),
 			$header = $('#header'),
 			$banner = $('#banner');
+
 		var $height = $('#header').height();
 
 		// Disable animations/transitions until the page has loaded.
@@ -43,6 +44,7 @@
 			});
 
 		// Banner
+
 			if ($banner.length > 0) {
 
 				// IE: Height fix.
@@ -64,6 +66,7 @@
 						.addClass('scrolly');
 
 			}
+
 
 		// Get BG Image
 

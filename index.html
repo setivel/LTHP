@@ -1,81 +1,326 @@
 <!DOCTYPE HTML>
-<!--
-	Road Trip by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
---><html><head><title>LiTRAIL</title><meta charset="utf-8"><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="assets/css/main.css"></head><body>
+<html>
+    <head>
+	    <title>LiTRAIL</title>
+	    <meta charset="utf-8">
+		<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+	    <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="assets/css/main.css">
+		<!-- Jarallax CSS -->
+		<link rel="stylesheet" href="https://unpkg.com/jarallax@2/dist/jarallax.css">
+	</head>
 
-<style>
-	@media (max-width: 640px) {
-		#banner {
-			height: 100vh !important;
-			min-height: 100vh !important;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-		}
+	<body>
+	<!-- wrap -->
+	<div id="wrap">
+		<!-- Header -->
+		<header id="header">
+			<div class="header_in w1590">
+				<div class="logo"><a href="" title="LiTRAIL">
+					<svg xmlns="http://www.w3.org/2000/svg" width="150" height="15" viewbox="0 0 1000 103">
+						<path d="M0 0 C9.879375 -0.103125 19.75875 -0.20625 29.9375 -0.3125 C33.04019287 -0.35802002 36.14288574 -0.40354004 39.33959961 -0.45043945 C41.81883668 -0.46505247 44.29808581 -0.47779121 46.77734375 -0.48828125 C48.04839966 -0.51386108 49.31945557 -0.53944092 50.62902832 -0.5657959 C58.38145831 -0.56958163 63.68024476 0.36761383 70 5 C70 5.66 70 6.32 70 7 C70.66 7 71.32 7 72 7 C78.9297519 16.35893124 81.07437131 25.47736775 80 37 C78.08064425 45.48442485 74.38163771 52.04715719 67.125 56.9375 C66.42375 57.288125 65.7225 57.63875 65 58 C66.5175884 62.36409206 68.83986867 65.96993973 71.4375 69.75 C72.33573959 71.07607566 73.23282982 72.40293041 74.12890625 73.73046875 C74.59699707 74.42317871 75.06508789 75.11588867 75.54736328 75.82958984 C78.50292058 80.24554016 81.36726871 84.72090483 84.24389648 89.18847656 C84.67645752 89.85975586 85.10901855 90.53103516 85.5546875 91.22265625 C85.96557617 91.86219238 86.37646484 92.50172852 86.79980469 93.16064453 C87.94620621 94.91755849 89.12982842 96.6438989 90.3203125 98.37109375 C92 101 92 101 92 103 C70.84966536 104.77827955 70.84966536 104.77827955 64.9765625 101.11328125 C62.90218679 98.18552313 61.48029248 95.26913228 60 92 C58.38395723 89.24602545 56.6559442 86.56590445 54.9375 83.875 C54.08951854 82.50410736 53.24185441 81.13301837 52.39453125 79.76171875 C45.74884745 68.86636178 45.74884745 68.86636178 35 63 C29.72 62.67 24.44 62.34 19 62 C19 75.53 19 89.06 19 103 C12.73 103 6.46 103 0 103 C0 69.01 0 35.02 0 0 Z M19 20 C19 26.93 19 33.86 19 41 C23.44801928 41.06910041 27.89415558 41.12876017 32.34228516 41.16479492 C33.85341727 41.17982543 35.36450618 41.20025564 36.87548828 41.22631836 C39.05512187 41.26295689 41.23417575 41.27978338 43.4140625 41.29296875 C44.7232666 41.3086792 46.0324707 41.32438965 47.38134766 41.34057617 C52.27816122 40.87970349 55.65918232 39.51382642 58.9375 35.8125 C60.39104621 31.96487768 60.2275038 28.91164544 59 25 C57.10571954 22.61687297 55.69988821 21.3499441 53 20 C50.44637396 19.91341431 47.9204558 19.88437484 45.3671875 19.90234375 C44.61535187 19.9037587 43.86351624 19.90517365 43.08889771 19.90663147 C40.6842249 19.91223535 38.27964473 19.92478843 35.875 19.9375 C34.24609509 19.9425145 32.61718873 19.9470775 30.98828125 19.95117188 C26.99212298 19.96135576 22.99616535 19.98093028 19 20 Z " fill="#FFFFFF" transform="translate(375,0)"/>
+						<path d="M0 0 C8.25 0 16.5 0 25 0 C25.96679688 2.77921875 26.93359375 5.5584375 27.9296875 8.421875 C34.7916005 28.13551745 41.69046155 47.83324715 48.73925781 67.48095703 C50.95746572 73.6725234 53.16584779 79.86757291 55.36950684 86.06433105 C55.86994615 87.47071996 56.37099617 88.87689171 56.87268066 90.28283691 C57.56502557 92.2231955 58.25541464 94.16423901 58.9453125 96.10546875 C59.34250488 97.22074951 59.73969727 98.33603027 60.14892578 99.48510742 C61 102 61 102 61 103 C53.08 103 45.16 103 37 103 C36.01 100.07125 35.02 97.1425 34 94.125 C33.68675781 93.20348145 33.37351562 92.28196289 33.05078125 91.33251953 C32.80714844 90.60661621 32.56351563 89.88071289 32.3125 89.1328125 C32.06113281 88.38918457 31.80976562 87.64555664 31.55078125 86.87939453 C31 85 31 85 31 83 C19.12 83.33 7.24 83.66 -5 84 C-7.31 90.27 -9.62 96.54 -12 103 C-19.92 103 -27.84 103 -36 103 C-34.85724609 99.77089844 -34.85724609 99.77089844 -33.69140625 96.4765625 C-28.59091308 82.05517271 -23.50653613 67.6292746 -18.52148438 53.16748047 C-14.51031754 41.54774447 -10.42429937 29.95432402 -6.34008789 18.36010742 C-6.06749146 17.58573837 -5.79489502 16.81136932 -5.51403809 16.01353455 C-5.00276808 14.56127891 -4.49107886 13.10917076 -3.97888184 11.65724182 C-2.61484553 7.78235182 -1.29928663 3.8978599 0 0 Z M12 32 C10.51802095 36.24902459 9.03990344 40.4993825 7.5625 44.75 C7.14162109 45.9565625 6.72074219 47.163125 6.28710938 48.40625 C5.88427734 49.56640625 5.48144531 50.7265625 5.06640625 51.921875 C4.5086853 53.52434082 4.5086853 53.52434082 3.93969727 55.15917969 C3.19534989 57.40943328 2.57485007 59.70059973 2 62 C8.93 62 15.86 62 23 62 C21.20667416 56.0222472 19.41233478 50.09962293 17.4375 44.1875 C17.02371094 42.94355469 16.60992188 41.69960938 16.18359375 40.41796875 C15.19817274 37.572281 14.15000597 34.7822725 13 32 C12.67 32 12.34 32 12 32 Z " fill="#FFFFFF" transform="translate(557,0)"/>
+						<path d="M0 0 C27.72 0 55.44 0 84 0 C84 6.6 84 13.2 84 20 C73.44 20 62.88 20 52 20 C52 47.39 52 74.78 52 103 C45.4 103 38.8 103 32 103 C32 75.61 32 48.22 32 20 C21.44 20 10.88 20 0 20 C0 13.4 0 6.8 0 0 Z " fill="#FFFFFF" transform="translate(221,0)"/>
+						<path d="M0 0 C0 25.41 0 50.82 0 77 C-17.66280734 75.03746585 -37.68639227 68.8796653 -49.80078125 54.92578125 C-55.42946888 47.65819174 -57.67837157 41.12290147 -56.7890625 31.78515625 C-55.03580774 23.43238592 -49.99348249 16.73088521 -43 12 C-30.21557947 4.39022587 -14.91793603 0 0 0 Z " fill="#F5C51E" transform="translate(1000,26)"/>
+						<path d="M0 0 C6.6 0 13.2 0 20 0 C20 27.39 20 54.78 20 83 C34.52 83 49.04 83 64 83 C64 89.6 64 96.2 64 103 C42.88 103 21.76 103 0 103 C0 69.01 0 35.02 0 0 Z " fill="#FFFFFF" transform="translate(777,0)"/>
+						<path d="M0 0 C6.27 0 12.54 0 19 0 C19 27.39 19 54.78 19 83 C33.85 83 48.7 83 64 83 C64 89.6 64 96.2 64 103 C42.88 103 21.76 103 0 103 C0 69.01 0 35.02 0 0 Z " fill="#FFFFFF" transform="translate(0,0)"/>
+						<path d="M0 0 C1.79244141 0.04737305 1.79244141 0.04737305 3.62109375 0.09570312 C6.54169977 0.17748009 9.456992 0.29201527 12.375 0.4375 C9.57392302 2.30488465 6.8044227 3.57174424 3.72485352 4.8996582 C-6.35374166 9.31796038 -16.37966742 15.06950112 -22.625 24.4375 C-23.285 24.4375 -23.945 24.4375 -24.625 24.4375 C-24.89183594 25.14003906 -25.15867187 25.84257812 -25.43359375 26.56640625 C-27.12688541 30.64696156 -29.2243041 34.49730606 -31.28515625 38.40234375 C-34.82730047 46.42638474 -34.30492721 54.78729308 -31.69140625 62.96875 C-30.22646243 66.36012177 -28.20175722 69.03006076 -25.83203125 71.84375 C-24.625 73.4375 -24.625 73.4375 -24.625 75.4375 C-23.965 75.4375 -23.305 75.4375 -22.625 75.4375 C-22.625 76.0975 -22.625 76.7575 -22.625 77.4375 C-21.635 77.4375 -20.645 77.4375 -19.625 77.4375 C-20.5325 76.48875 -21.44 75.54 -22.375 74.5625 C-29.66454803 65.85649951 -30.78249934 56.47489808 -29.88671875 45.46923828 C-28.27215419 32.93527721 -19.51884124 24.32874949 -10.0625 16.8125 C-3.07113184 11.77407779 4.47682583 7.86090709 12.375 4.4375 C13.17059326 4.07124512 13.96618652 3.70499023 14.78588867 3.32763672 C22.72396461 0.00007057 30.04606538 -0.03359566 38.5625 0.1875 C39.90947828 0.20762111 41.256486 0.22586185 42.60351562 0.2421875 C45.86144916 0.28889622 49.11782655 0.35438438 52.375 0.4375 C52.375 1.4275 52.375 2.4175 52.375 3.4375 C51.67640869 3.55754395 50.97781738 3.67758789 50.25805664 3.80126953 C25.8066746 8.0702716 -0.65214327 13.22334783 -16.72265625 34.171875 C-22.13300287 42.21518292 -25.054209 49.8756851 -23.1953125 59.7109375 C-20.77436143 69.1855238 -15.70266218 77.80192174 -7.625 83.4375 C-6.635 83.9325 -6.635 83.9325 -5.625 84.4375 C-5.625 85.0975 -5.625 85.7575 -5.625 86.4375 C-4.944375 86.69660156 -4.26375 86.95570312 -3.5625 87.22265625 C-0.17146262 88.62506665 3.09924526 90.22662342 6.375 91.875 C6.97828125 92.17470703 7.5815625 92.47441406 8.203125 92.78320312 C10.81300634 94.09098062 13.32843655 95.40655931 15.76171875 97.0234375 C19.41436157 98.99990491 23.1488007 99.75497006 27.1875 100.625 C27.97576172 100.80224609 28.76402344 100.97949219 29.57617188 101.16210938 C31.50735497 101.59516255 33.44095223 102.01742568 35.375 102.4375 C35.375 102.7675 35.375 103.0975 35.375 103.4375 C27.4067994 103.79725358 20.38906054 102.89209031 12.6875 100.875 C11.64311768 100.6061499 10.59873535 100.3372998 9.52270508 100.06030273 C-5.52694591 96.02937381 -19.76463472 89.78108677 -31.625 79.4375 C-31.625 78.7775 -31.625 78.1175 -31.625 77.4375 C-32.22183594 77.19386719 -32.81867187 76.95023437 -33.43359375 76.69921875 C-39.21262781 73.37189611 -42.40924614 65.50166847 -44.625 59.4375 C-47.58015785 46.86767365 -45.09150051 34.84588306 -38.5625 23.8125 C-34.36516585 17.65999738 -29.30755333 12.24436234 -23.625 7.4375 C-22.93051758 6.82060303 -22.23603516 6.20370605 -21.52050781 5.56811523 C-14.49617903 -0.08608348 -8.81190254 -0.44698056 0 0 Z M-18.625 79.4375 C-17.965 80.0975 -17.305 80.7575 -16.625 81.4375 C-16.625 80.7775 -16.625 80.1175 -16.625 79.4375 C-17.285 79.4375 -17.945 79.4375 -18.625 79.4375 Z " fill="#F5C51E" transform="translate(947.625,-0.43749999999999994)"/>
+						<path d="M0 0 C6.6 0 13.2 0 20 0 C20 33.99 20 67.98 20 103 C13.4 103 6.8 103 0 103 C0 69.01 0 35.02 0 0 Z " fill="#FFFFFF" transform="translate(683,0)"/>
+						<path d="M0 0 C6.6 0 13.2 0 20 0 C20 24.42 20 48.84 20 74 C13.4 74 6.8 74 0 74 C0 49.58 0 25.16 0 0 Z " fill="#FFFFFF" transform="translate(133,29)"/>
+						<path d="M0 0 C5 5 5 5 6.8515625 6.9921875 C23.09148207 24.23368801 47.58498976 30.2565746 70 35 C70 35.33 70 35.66 70 36 C46.9 36 23.8 36 0 36 C0 24.12 0 12.24 0 0 Z " fill="#F5C51E" transform="translate(896,67)"/>
+						<path d="M0 0 C6.6 0 13.2 0 20 0 C20 5.94 20 11.88 20 18 C13.4 18 6.8 18 0 18 C0 12.06 0 6.12 0 0 Z " fill="#FFFFFF" transform="translate(133,0)"/>
+						<path d="M0 0 C4.62 0 9.24 0 14 0 C12.11796615 3.76406771 9.95728108 7.12314559 7.5625 10.5625 C7.16740234 11.13935547 6.77230469 11.71621094 6.36523438 12.31054688 C4.39481002 15.15307252 2.458424 17.541576 0 20 C0 13.4 0 6.8 0 0 Z " fill="#F5C51E" transform="translate(896,0)"/>
+					</svg>
+				</a></div>
+				<!-- 햄버거 메뉴 버튼 (모바일) -->
+				<button id="mobile-menu-btn" class="mobile-menu-button">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
 
-		#page2 {
-			min-height: 100vh;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-		}
-	}
+				<!-- 네비게이션 메뉴 -->
+				<nav id="top-nav" class="top-navigation">
+					<a href="#banner" class="nav-link scrolly">HOME</a>
+					<a href="#page2" class="nav-link scrolly">ABOUT</a>
+					<a href="#page3" class="nav-link scrolly">GAMES</a>
+					<!-- <a href="#news" class="nav-link scrolly">NEWS</a> -->
+					<a href="#contact" class="nav-link scrolly">CONTACT</a>
+				</nav>
+			</div>
+		</header>
+		<!--//Header -->
 
-	@supports (height: 100dvh) {
-		@media (max-width: 640px) {
-			#banner { height: 100dvh !important; min-height: 100dvh !important; }
-			#page2 { min-height: 100dvh; }
-
-			#banner .more {
-				position: absolute;
-				transform: translate(0%, -1rem);
-				bottom: calc(env(safe-area-inset-bottom, 0px) + 1rem);
-				z-index: 1000;
-			}
-		}
-	}
-</style>
+	<!-- 모바일 메뉴 오버레이 -->
+	<div id="mobile-menu-overlay" class="mobile-menu-overlay">
+		<div class="mobile-menu-content">
+			<a href="#banner" class="mobile-menu-link scrolly">HOME</a>
+			<a href="#page2" class="mobile-menu-link scrolly">ABOUT</a>
+			<a href="#page3" class="mobile-menu-link scrolly">GAMES</a>
+			<!-- <a href="#news" class="mobile-menu-link scrolly">NEWS</a> -->
+			<a href="#footer" class="mobile-menu-link scrolly">CONTACT</a>
+		</div>
+	</div>
 
 			<!-- Page1 -->
 			<nav id="menu">
 				<ul class="links"><li><a href="index.html">Home</a></li>
 				</ul>
 			</nav>
-			<section id="banner" class="bg-img" data-bg="page1.png"><div class="inner">
+			<section id="banner" class="bg-img"><div class="inner">
 					<header><h1></h1>
 					</header></div>
+				<div class="roll" data-title="Gate of Gates">
+					<div class="v_logo w1590"><img src="./images/GOG_BI_F.png" alt="Gate of Gates"/></div>
+					<div class="v_bg">
+						<div class="v_video"><div class="jarallax"></div></div>
+					</div>
+				</div>
 				<a href="#page2" class="more">Next</a>
 			</section>
 
-			<!-- Page2 -->
-			<section id="page2" class="wrapper post bg-img" data-bg="page2.png"><div class="inner">
-					<article class="box"><header><h2>Project GOG</h2>
-						</header><div class="content">
-							<p>Coming Soon</p>
-						</div>
-						<!--
-						<footer><a href="gog.html" class="button alt">More</a></footer>
-						-->
-						</article></div>
-				<a href="#footer" class="more">Next</a>
+			<!-- Page2 : About -->
+			<section id="page2" class="wrapper post">
+				<div class="inner">
+					<img src="./images/CI_White_Color.png" alt="LiTRAIL" class="fade-in">
+					<p class="tagline fade-in">For Fun, For Fan</p>
+				</div>
+				<a href="#page3" class="more">Next</a>
 			</section>
 
-			<!-- Footer -->
-			<footer id="footer">
+            <!-- Page3 : Games -->
+            <section id="page3" class="wrapper post bg-img" data-bg="page2.jpg">
 				<div class="inner">
+					<!-- 플레이 버튼 -->
+					<button class="play-button" id="playButton">
+						<i class="fa fa-play"></i>
+					</button>
 
+					<!-- 소셜 & 플랫폼 링크 -->
+					<div class="social-platform-container">
+						<!-- X(트위터) 링크 -->
+						<a href="https://x.com/gateofgates_kr" target="_blank" class="x-link" rel="noopener noreferrer" aria-label="Follow us on X (KR)">
+							<i class="fa fa-twitter"></i>
+							<span class="x-label">KR</span>
+						</a>
+						<a href="https://x.com/gateofgates" target="_blank" class="x-link" rel="noopener noreferrer" aria-label="Follow us on X (JP)">
+							<i class="fa fa-twitter"></i>
+							<span class="x-label">JP</span>
+						</a>
+
+						<!-- 플랫폼 링크 (비활성화) -->
+						<div class="platform-link disabled" aria-label="iOS - Coming Soon">
+							<i class="fa fa-apple"></i>
+							<span class="platform-label">iOS</span>
+						</div>
+						<div class="platform-link disabled" aria-label="Android - Coming Soon">
+							<i class="fa fa-android"></i>
+							<span class="platform-label">Android</span>
+						</div>
+						<div class="platform-link disabled" aria-label="Windows - Coming Soon">
+							<i class="fa fa-windows"></i>
+							<span class="platform-label">Windows</span>
+						</div>
+					</div>
+				</div>
+                <a href="#contact" class="more">Next</a>
+            </section>
+
+			<!-- News Section -->
+			<!--
+			<section id="news" class="wrapper post bg-img" data-bg="page2.png">
+				<div class="inner">
+					<article class="box">
+						<header><h2>News</h2></header>
+						<div class="content">
+							<ul class="news_list">
+						<li class="list">
+							<div class="thumb">
+								<img src="./images/news1.jpg" alt="News 1">
+							</div>
+							<div class="desc">
+								<h3>Gate of Gates 공개</h3>
+								<p class="date">2025.11.01</p>
+							</div>
+						</li>
+							</ul>
+						</div>
+					</article>
+				</div>
+				<a href="#contact" class="more">Next</a>
+			</section>
+			-->
+
+			<!-- YouTube 모달 -->
+			<div class="video-modal" id="videoModal">
+				<div class="video-container">
+					<iframe
+						id="youtubeIframe"
+						src=""
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						referrerpolicy="strict-origin-when-cross-origin"
+						allowfullscreen>
+					</iframe>
+				</div>
+			</div>
+
+			<!-- Contact -->
+			<footer id="contact">
+				<div class="inner">
 					<h2>Contact</h2>
 
-					<form action="#" method="post">
-
-					<ul class="icons">
-						<li><a href="mailto:contact@li-trail.com" class="icon round fa-envelope"><span class="label">Twitter</span></a></li>
-					</ul>
+					<div class="contact-content">
+						<div class="contact-section">
+							<div class="contact-info">
+								<div class="info-item">
+									<div class="contact-info">
+                                        <span class="label">ADDRESS</span>
+										<span class="value">
+											<a href="https://naver.me/GtJe3QvU" target="_blank" class="map-icon" rel="noopener noreferrer">
+												<i class="fa fa-map-marker"></i>
+											</a>
+										</span>
+									</div>
+								</div>
+								<div class="info-item">
+									<span class="label">E-MAIL</span>
+									<span class="value"><a href="mailto:contact@li-trail.com">contact@li-trail.com</a></span>
+								</div>
+								<div class="info-item">
+									<span class="label">RECRUIT</span>
+									<span class="value">
+										<a href="https://www.gamejob.co.kr/Company/Detail?M=47641225" target="_blank" class="recruit-button" rel="noopener noreferrer">
+											<img src="https://www.gamejob.co.kr/favicon.ico" alt="게임잡" class="recruit-icon" />
+											<span>채용 공고 보기</span>
+										</a>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-			</footer><div class="copyright">
-				© 2024 LiTRAIL. All Rights Reserved.
-		</div>
+
+				<div class="copyright">
+					© 2024 LiTRAIL. All Rights Reserved.
+				</div>
+			</footer>
+
 		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script><script src="assets/js/jquery.scrolly.min.js"></script><script src="assets/js/jquery.scrollex.min.js"></script><script src="assets/js/skel.min.js"></script><script src="assets/js/util.js"></script><script src="assets/js/main.js"></script></body></html>
+		<script src="assets/js/jquery.min.js"></script><script src="assets/js/jquery.scrolly.min.js"></script><script src="assets/js/jquery.scrollex.min.js"></script><script src="assets/js/skel.min.js"></script><script src="assets/js/util.js"></script><script src="assets/js/main.js"></script>
+
+		<!-- Jarallax -->
+		<script src="https://unpkg.com/jarallax@2/dist/jarallax.min.js"></script>
+		<script src="https://unpkg.com/jarallax@2/dist/jarallax-video.min.js"></script>
+
+		<!-- Jarallax 초기화 -->
+		<script>
+			jarallax(document.querySelectorAll('.jarallax'), {
+				speed: 0.2,
+				videoSrc: 'https://www.youtube.com/embed/XIlPSyv-PQQ?si=jU9Fv3Rp8J6dxM6Q&autoplay=1'
+			});
+		</script>
+
+	<!-- 네비게이션 스크롤 효과 (ABOUT 섹션의 CI 이미지 보일 때만 로고 숨김) -->
+	<script>
+		(function() {
+			const logo = document.querySelector('#header .logo');
+			const ciImage = document.querySelector('#page2 img[alt="LiTRAIL"]');
+
+			// IntersectionObserver로 CI 이미지 감지
+			const observer = new IntersectionObserver(function(entries) {
+				entries.forEach(function(entry) {
+					// CI 이미지가 화면에 보이면 로고 숨김
+					if (entry.isIntersecting) {
+						logo.classList.add('hidden');
+					} else {
+						logo.classList.remove('hidden');
+					}
+				});
+			}, {
+				threshold: 0.1 // 이미지의 10%가 보이면 감지
+			});
+
+			// CI 이미지 관찰 시작
+			if (ciImage) {
+				observer.observe(ciImage);
+			}
+		})();
+	</script>
+
+	<!-- 스크롤 속도 설정 (2배 빠르게) -->
+	<script>
+		$(function() {
+			// scrolly 링크의 기본 속도를 빠르게 설정 (기본값의 절반)
+			$('.scrolly').scrolly({
+				speed: 500  // 기본 1000ms에서 500ms로 변경 (2배 빠름)
+			});
+		});
+	</script>
+
+	<!-- 모바일 메뉴 토글 스크립트 -->
+	<script>
+		$(function() {
+			const mobileMenuBtn = $('#mobile-menu-btn');
+			const mobileMenuOverlay = $('#mobile-menu-overlay');
+			const mobileMenuLinks = $('.mobile-menu-link');
+
+			// 햄버거 버튼 클릭
+			mobileMenuBtn.on('click', function() {
+				mobileMenuOverlay.toggleClass('active');
+			});
+
+			// 오버레이 배경(딤드) 클릭 시 닫기
+			mobileMenuOverlay.on('click', function(e) {
+				if (e.target === this) {
+					mobileMenuOverlay.removeClass('active');
+				}
+			});
+
+			// 메뉴 링크 클릭 시 오버레이 닫기
+			mobileMenuLinks.on('click', function() {
+				mobileMenuOverlay.removeClass('active');
+			});
+		});
+	</script>
+
+	<!-- YouTube 모달 제어 -->
+	<script>
+		$(function() {
+			const playButton = $('#playButton');
+			const videoModal = $('#videoModal');
+			const closeButton = $('#closeButton');
+			const youtubeIframe = $('#youtubeIframe');
+			const videoUrl = 'https://www.youtube.com/embed/UGiMFrFhD8c?si=jU9Fv3Rp8J6dxM6Q&autoplay=1';
+
+			// 플레이 버튼 클릭 시 모달 열기
+			playButton.on('click', function() {
+				youtubeIframe.attr('src', videoUrl);
+				videoModal.addClass('active');
+			});
+
+			// 닫기 버튼 클릭 시 모달 닫기
+			closeButton.on('click', function() {
+				videoModal.removeClass('active');
+				youtubeIframe.attr('src', '');
+			});
+
+			// 모달 배경 클릭 시 닫기
+			videoModal.on('click', function(e) {
+				if (e.target === this) {
+					videoModal.removeClass('active');
+					youtubeIframe.attr('src', '');
+				}
+			});
+
+			// ESC 키로 모달 닫기
+			$(document).on('keydown', function(e) {
+				if (e.key === 'Escape' && videoModal.hasClass('active')) {
+					videoModal.removeClass('active');
+					youtubeIframe.attr('src', '');
+				}
+			});
+		});
+	</script>
+	</body>
+</html>
