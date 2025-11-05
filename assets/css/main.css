@@ -3769,6 +3769,46 @@
 
 		@media screen and (max-width: 980px) {
 
+			@-moz-keyframes more {
+				0% {
+					bottom: -3em;
+				}
+
+				100% {
+					bottom: 3em;
+				}
+			}
+
+			@-webkit-keyframes more {
+				0% {
+					bottom: -3em;
+				}
+
+				100% {
+					bottom: 3em;
+				}
+			}
+
+			@-ms-keyframes more {
+				0% {
+					bottom: -3em;
+				}
+
+				100% {
+					bottom: 3em;
+				}
+			}
+
+			@keyframes more {
+				0% {
+					bottom: -3em;
+				}
+
+				100% {
+					bottom: 3em;
+				}
+			}
+
 			#banner {
 				font-size: .85em;
 			}
@@ -4113,7 +4153,7 @@
 				}
 
 				100% {
-					bottom: 1.5em;
+					bottom: 2.5em;
 				}
 
 		}
@@ -4124,7 +4164,7 @@
 				}
 
 				100% {
-					bottom: 1.5em;
+					bottom: 2.5em;
 				}
 			}
 
@@ -4134,7 +4174,7 @@
 				}
 
 				100% {
-					bottom: 1.5em;
+					bottom: 2.5em;
 				}
 			}
 
@@ -4144,7 +4184,7 @@
 				}
 
 				100% {
-					bottom: 1.5em;
+					bottom: 2.5em;
 				}
 			} }
 
@@ -4591,7 +4631,7 @@
 				bottom: -3em;
 			}
 			100% {
-				bottom: 5em;
+				bottom: 6em;
 			}
 		}
 
@@ -4600,7 +4640,7 @@
 				bottom: -3em;
 			}
 			100% {
-				bottom: 5em;
+				bottom: 6em;
 			}
 		}
 
@@ -4609,7 +4649,7 @@
 				bottom: -3em;
 			}
 			100% {
-				bottom: 5em;
+				bottom: 6em;
 			}
 		}
 
@@ -4618,7 +4658,7 @@
 				bottom: -3em;
 			}
 			100% {
-				bottom: 5em;
+				bottom: 6em;
 			}
 		}
 	}
