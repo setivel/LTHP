@@ -4639,7 +4639,7 @@
 				bottom: -3em;
 			}
 			100% {
-                bottom: 8em;
+                bottom: 10.5em;
 			}
 		}
 
@@ -4648,7 +4648,7 @@
 				bottom: -3em;
 			}
 			100% {
-                bottom: 8em;
+                bottom: 10.5em;
 			}
 		}
 
@@ -4657,7 +4657,7 @@
 				bottom: -3em;
 			}
 			100% {
-                bottom: 8em;
+                bottom: 10.5em;
 			}
 		}
 
@@ -4666,7 +4666,7 @@
 				bottom: -3em;
 			}
 			100% {
-				bottom: 8em;
+                bottom: 10.5em;
 			}
 		}
 	}
@@ -5476,7 +5476,7 @@
 /* GAMES 페이지 소셜 & 플랫폼 링크 컨테이너 */
 .social-platform-container {
 	position: absolute;
-	bottom: 80px;
+	bottom: 100px;
 	left: 0;
 	right: 0;
 	display: flex;
