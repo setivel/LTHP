@@ -391,5 +391,97 @@
 			});
 		});
 	</script>
+
+	<!-- GA4 이벤트 추적 -->
+	<script>
+		$(function() {
+			// GTM dataLayer 이벤트 전송 함수
+			function trackEvent(eventName, eventParams) {
+				window.dataLayer = window.dataLayer || [];
+				window.dataLayer.push({
+					'event': eventName,
+					...eventParams
+				});
+			}
+
+			// 1. 네비게이션 메뉴 클릭 추적 (데스크톱)
+			$('.nav-link').on('click', function() {
+				var linkText = $(this).text();
+				trackEvent('navigation_click', {
+					'link_text': linkText,
+					'link_type': 'desktop_nav'
+				});
+			});
+
+			// 2. 네비게이션 메뉴 클릭 추적 (모바일)
+			$('.mobile-menu-link').on('click', function() {
+				var linkText = $(this).text();
+				trackEvent('navigation_click', {
+					'link_text': linkText,
+					'link_type': 'mobile_nav'
+				});
+			});
+
+			// 3. 플레이 버튼 클릭 추적
+			$('#playButton').on('click', function() {
+				trackEvent('video_play', {
+					'video_title': 'Gate of Gates Trailer',
+					'button_location': 'games_section'
+				});
+			});
+
+			// 4. X(트위터) 링크 클릭 추적
+			$('.x-link').on('click', function() {
+				var label = $(this).find('.x-label').text();
+				var url = $(this).attr('href');
+				trackEvent('social_click', {
+					'social_platform': 'X(Twitter)',
+					'link_label': label,
+					'link_url': url
+				});
+			});
+
+			// 5. 채용 공고 버튼 클릭 추적
+			$('.recruit-button').on('click', function() {
+				trackEvent('recruitment_click', {
+					'button_text': '채용 공고 보기',
+					'destination': 'gamejob'
+				});
+			});
+
+			// 6. More 버튼 클릭 추적
+			$('.more').on('click', function() {
+				var currentSection = $(this).closest('section').attr('id') || 'unknown';
+				trackEvent('more_button_click', {
+					'section': currentSection
+				});
+			});
+
+			// 7. 지도 아이콘 클릭 추적
+			$('.map-icon').on('click', function() {
+				trackEvent('map_click', {
+					'button_text': 'ADDRESS',
+					'destination': 'naver_map'
+				});
+			});
+
+			// 8. 이메일 링크 클릭 추적
+			$('a[href^="mailto:"]').on('click', function() {
+				var email = $(this).attr('href').replace('mailto:', '');
+				trackEvent('email_click', {
+					'email_address': email
+				});
+			});
+
+			// 9. 비활성화된 플랫폼 링크 클릭 추적
+			$('.platform-link.disabled').on('click', function() {
+				var platform = $(this).find('.platform-label').text();
+				trackEvent('disabled_platform_click', {
+					'platform': platform,
+					'status': 'coming_soon'
+				});
+			});
+		});
+	</script>
 	</body>
 </html>
