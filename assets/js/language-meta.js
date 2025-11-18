@@ -10,21 +10,21 @@
     const metaData = {
         // 한국어
         'ko': {
-            description: 'For Fun, For Fiction, For Fans. 더 많은 유저들을 위해 재미있고, 유니크한 이야기가 있는 게임을 만들고자 하는 게임 개발 스튜디오입니다.',
+            description: 'For Fun, For Fiction, For Fans 를 모토로 하는 게임 개발 스튜디오입니다.',
             keywords: 'LiTRAIL,리트레일,GateOfGates,게임개발,게임스튜디오,모바일게임,PC게임',
             classification: '게임,캐릭터,소프트웨어,그래픽',
             title: '리트레일 LiTRAIL - For Fun, For Fiction, For Fans'
         },
         // 일본어
         'ja': {
-            description: 'For Fun, For Fiction, For Fans. より多くのユーザーのために、楽しくユニークなストーリーのあるゲームを作ることを目指すゲーム開発スタジオです。',
+            description: 'For Fun, For Fiction, For Fans をモットーとするゲーム開発スタジオです。',
             keywords: 'LiTRAIL,リトレール,ゲート・オブ・ゲーツ,ゲーム開発,ゲームスタジオ,モバイルゲーム,PCゲーム',
             classification: 'ゲーム,キャラクター,ソフトウェア,グラフィック',
             title: 'リトレール LiTRAIL - For Fun, For Fiction, For Fans'
         },
         // 영어
         'en': {
-            description: 'For Fun, For Fiction, For Fans. A game development studio dedicated to creating fun games with unique stories for more users.',
+            description: 'A game development studio with the motto "For Fun, For Fiction, For Fans".',
             keywords: 'LiTRAIL,Gate of Gates,game development,game studio,mobile games,PC games',
             classification: 'Games,Characters,Software,Graphics',
             title: 'LiTRAIL - For Fun, For Fiction, For Fans'
