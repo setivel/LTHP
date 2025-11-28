@@ -4919,7 +4919,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: 5px;
-		line-height: 2;
+		line-height: 1.5;
 		text-align: center;
 		margin-bottom: 30px;
 	}
@@ -4928,6 +4928,10 @@
 		color: rgba(255, 255, 255, 0.5);
 		font-size: 16px;
 		font-weight: 300;
+	}
+
+	.info-item:last-child .label {
+		padding-top: 4px;
 	}
 
 	.info-item .value {
@@ -5438,6 +5442,7 @@
 	align-items: center;
 	gap: 8px;
 	padding: 10px 20px;
+	margin-top: 2px;
 	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 	color: white !important;
 	text-decoration: none !important;
