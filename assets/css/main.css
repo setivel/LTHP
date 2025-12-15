@@ -225,8 +225,6 @@
 		top: 0.5em;
 	}
 
-		}
-
 	.align-left {
 		text-align: left;
 	}
@@ -253,7 +251,6 @@
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #fff;
-	}
 	}
 
 /* Button */
@@ -784,46 +781,6 @@
 
 		@media screen and (max-width: 980px) {
 
-			@-moz-keyframes more {
-				0% {
-					bottom: -3em;
-				}
-
-				100% {
-					bottom: 3em;
-				}
-			}
-
-			@-webkit-keyframes more {
-				0% {
-					bottom: -3em;
-				}
-
-				100% {
-					bottom: 3em;
-				}
-			}
-
-			@-ms-keyframes more {
-				0% {
-					bottom: -3em;
-				}
-
-				100% {
-					bottom: 3em;
-				}
-			}
-
-			@keyframes more {
-				0% {
-					bottom: -3em;
-				}
-
-				100% {
-					bottom: 3em;
-				}
-			}
-
 			#banner {
 				font-size: .85em;
 			}
@@ -979,46 +936,6 @@
 			width: 100%;
 			z-index: 1;
 		}
-
-	@-moz-keyframes more {
-		0% {
-			bottom: -3em;
-		}
-
-		100% {
-			bottom: 2em;
-		}
-	}
-
-	@-webkit-keyframes more {
-		0% {
-			bottom: -3em;
-		}
-
-		100% {
-			bottom: 2em;
-		}
-	}
-
-	@-ms-keyframes more {
-		0% {
-			bottom: -3em;
-		}
-
-		100% {
-			bottom: 2em;
-		}
-	}
-
-	@keyframes more {
-		0% {
-			bottom: -3em;
-		}
-
-		100% {
-			bottom: 2em;
-		}
-	}
 
 		.post .more {
 			background-color: rgba(255, 255, 255, 0.15);
@@ -2154,4 +2071,38 @@
 	.platform-label {
 		font-size: 11px;
 	}
+}
+
+/* Loading Overlay */
+#loading-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 99999;
+	opacity: 1;
+	transition: opacity 0.5s ease-out;
+}
+
+#loading-overlay.fade-out {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.loading-spinner {
+	width: 40px;
+	height: 40px;
+	border: 3px solid rgba(255, 255, 255, 0.2);
+	border-top-color: #fff;
+	border-radius: 50%;
+	animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+	to { transform: rotate(360deg); }
 }
