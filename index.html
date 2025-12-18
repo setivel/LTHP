@@ -450,6 +450,8 @@
 	<!-- 로딩 인디케이터 페이드 아웃 -->
 	<script>
 		(function() {
+			// CSS 변수에서 로딩 시간 가져오기
+			var loadingDuration = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--loading-duration')) || 1500;
 			setTimeout(function() {
 				var loadingOverlay = document.getElementById('loading-overlay');
 				if (loadingOverlay) {
@@ -458,7 +460,7 @@
 						loadingOverlay.remove();
 					}, 500);
 				}
-			}, 1000);
+			}, loadingDuration);
 		})();
 	</script>
 	</body>

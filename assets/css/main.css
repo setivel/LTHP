@@ -2,6 +2,14 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Lobster|Open+Sans:300,400,600,700,800");
 
+/* ============================================
+   Animation Timing Variables
+   ============================================ */
+:root {
+	--loading-duration: 1500ms;        /* 스피너 유지 시간 */
+	--intro-animation-delay: 1.5s;     /* CI 로고 & more 버튼 등장 지연 */
+}
+
 /*
 	Road Trip by TEMPLATED
 	templated.co @templatedco
@@ -699,10 +707,10 @@
 			-webkit-transition: height 0.2s ease;
 			-ms-transition: height 0.2s ease;
 			transition: height 0.2s ease;
-			-moz-animation: more 0.75s ease-out 1s forwards;
-			-webkit-animation: more 0.75s ease-out 1s forwards;
-			-ms-animation: more 0.75s ease-out 1s forwards;
-			animation: more 0.75s ease-out 1s forwards;
+			-moz-animation: more 0.75s ease-out var(--intro-animation-delay) forwards;
+			-webkit-animation: more 0.75s ease-out var(--intro-animation-delay) forwards;
+			-ms-animation: more 0.75s ease-out var(--intro-animation-delay) forwards;
+			animation: more 0.75s ease-out var(--intro-animation-delay) forwards;
 			background-color: rgba(255, 255, 255, 0.15);
 			border: 0;
 			border-radius: 1em 1em 0 0;
@@ -1726,7 +1734,7 @@
 		text-align: center;
 		width: 100%;
 		opacity: 0;
-		animation: fadeInLogo 2s ease-in-out 1s forwards;
+		animation: fadeInLogo 2s ease-in-out var(--intro-animation-delay) forwards;
 	}
 
 	.v_logo img {
