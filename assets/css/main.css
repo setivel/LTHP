@@ -6,8 +6,8 @@
    Animation Timing Variables
    ============================================ */
 :root {
-	--loading-duration: 1500ms;        /* 스피너 유지 시간 */
-	--intro-animation-delay: 1.5s;     /* CI 로고 & more 버튼 등장 지연 */
+	--loading-duration: 2500ms;        /* 스피너 유지 시간 */
+	--intro-animation-delay: 2.0s;     /* CI 로고 & more 버튼 등장 지연 */
 }
 
 /*
